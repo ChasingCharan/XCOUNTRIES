@@ -9,7 +9,7 @@ function App() {
     fetch("https://xcountries-backend.labs.crio.do/all")
       .then(response => response.json())
       .then(data => setCountries(data))
-      .catch((error) => {console.error("Error fetching countries:", error)});
+      .catch((error) => {console.error("Error fetching data:", error)});
   }, [])
 
   return (
